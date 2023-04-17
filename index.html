@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjRmNWI4NGUxLTU2Y2ItNDViZi05OTRkLTBmZDc2YTEzMzVkNyJ9">
+    <title>BONNIE&SLIDE - The Game®</title>
+    <meta name="description" content="Академия убойных презентаций №1 в России">
+    <link rel="stylesheet" href="./src/css/start.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./src/favicon/safari-pinned-tab.svg" color="#f60c51">
+    <meta name="msapplication-TileColor" content="#f60c51">
+    <meta name="theme-color" content="#f60c51">
+</head>
+<body>
+    <main class="start">
+
+        <img class="start_sun" src="./src/images/sun.png" alt="">
+
+        <img class="start_cloud" src="./src/images/облако1.png" alt="">
+        <img class="start_cloud-left" src="./src/images/облако4.png" alt="">
+        <img class="start_cloud-right" src="./src/images/облако1.png" alt="">
+
+        <img class="start_airshipping" src="./src/images/airshippng.png" alt="">
+        
+        <img class="start_ballon-one" src="./src/images/ballons.png" alt="">
+        <img class="start_ballon-two" src="./src/images/ballons.png" alt="">
+
+        <img class="start_char" src="./src/images/char_srart.png" alt="">
+
+        <div class="start_go">
+            <div class="start_title">Пожарь шашлык</div>
+            <div class="start_subtitle">
+                и выигрывай призы вместе с Bonnie и Slide
+            </div>
+
+            <button class="start_btn">
+                играть
+            </button>
+        </div>
+
+    </main>
+
+    <section class="game hidden">
+        <div class="playground">
+            <!-- <div class="scenery"></div> -->
+            <div> 
+                <div class="game_cloud"></div>
+                <div class="game_cloud--two"></div>
+                <div class="game_cloud--three"></div>
+                <div class="game_cloud--four"></div>
+                <div class="game_cloud--five"></div>
+
+                <div class="box unclaimed stuff-box"></div>
+                <div class="box unclaimed stuff-box"></div>
+                <div class="box unclaimed stuff-box"></div>
+                <div class="box unclaimed stuff-box"></div>
+                <div class="box unclaimed hero-box"></div>
+                <div class="box unclaimed hero-box"></div>
+                <div class="box unclaimed hero-box"></div>
+                <div class="box unclaimed meat-box"></div>
+                <div class="box unclaimed meat-box"></div>
+                <div class="box unclaimed meat-box"></div>
+                <div class="box unclaimed stuff-box"></div>
+                <div class="box unclaimed stuff-box"></div>
+                <div class="box unclaimed stuff-box"></div>
+            </div>
+            
+            <div class="player-stick">
+                <div class="slices">
+                    <div class="slice slice-1 hidden"></div>
+                    <div class="slice slice-2 hidden"></div>
+                    <div class="slice slice-3 hidden"></div>
+                    <div class="slice slice-4 hidden"></div>
+                    <div class="slice slice-5 hidden"></div>
+                    <div class="slice slice-6 hidden"></div>
+                    <div class="slice slice-7 hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- overlay -->
+
+    <!-- Конец игры -->
+    <div class="overlay_end hidden">
+        <img class="game_over" src="./src/images/game_over.png" alt="">
+        <span class="game_over hidden">Для того чтобы<br>пожарить шашлык,<br>нужно мясо</span>
+        <button class="game_over_btn">
+            Играть ещё раз
+        </button>
+    </div>
+
+
+    <!-- Ваша скидка -->
+    <div class="overlay_sale hidden">
+        
+        <img class="hand_two" src="./src/images/hand_two.png" alt="">
+        <img class="hand_three" src="./src/images/hand_three.png" alt="">
+        <img class="smoke" src="./src/images/smoke.png" alt="">
+        <div >
+            <div class="overlay_sale-title">
+                Ты собрал <span class="slice_count"></span> <span class="output"></span> 
+                <br>
+                <span class="title-pink">И выиграл скидку в <span class="slice_count"></span> рублей</span>
+                <br>
+                <span class="title-light">на курс «Стань дизайнером презентаций»</span>
+            </div>
+            <div class="title-light--two">А также жди звонка менеджера <br> и он расскажет, как получить <br> настоящий шашлык </div>
+        </div>
+       
+        <div class="fire-wrapper">
+            <div class="mo-fire">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="125px" height="189.864px" viewBox="0 0 125 189.864" enable-background="new 0 0 125 189.864" xml:space="preserve">
+                    <path class="flame-main" fill="#BA2C40" d="M76.553,186.09c0,0-10.178-2.976-15.325-8.226s-9.278-16.82-9.278-16.82s-0.241-6.647-4.136-18.465
+                        c0,0,3.357,4.969,5.103,9.938c0,0-5.305-21.086,1.712-30.418c7.017-9.333,0.571-35.654-2.25-37.534c0,0,13.07,5.64,19.875,47.54
+                        c6.806,41.899,16.831,45.301,6.088,53.985"/>
+                    <path class="flame-main one" fill="#F60C50" d="M61.693,122.257c4.117-15.4,12.097-14.487-11.589-60.872c0,0,32.016,10.223,52.601,63.123
+                        c20.585,52.899-19.848,61.045-19.643,61.582c0.206,0.537-19.401-0.269-14.835-18.532S57.576,137.656,61.693,122.257z"/>
+                    <path class="flame-main two" fill="#BB2C40" d="M81.657,79.192c0,0,11.549,24.845,3.626,40.02c-7.924,15.175-21.126,41.899-0.425,64.998
+                        C84.858,184.21,125.705,150.905,81.657,79.192z"/>
+                    <path class="flame-main three" fill="#F60C50" d="M99.92,101.754c0,0-23.208,47.027-12.043,80.072c0,0,32.741-16.073,20.108-45.79
+                        C95.354,106.319,99.92,114.108,99.92,101.754z"/>
+                    <path class="flame-main four" fill="#CA2444" d="M103.143,105.917c0,0,8.927,30.753-1.043,46.868c-9.969,16.115-14.799,29.041-14.799,29.041
+                        S134.387,164.603,103.143,105.917z"/>
+                    <path class="flame-main five" fill="#F60C50" d="M62.049,104.171c0,0-15.645,67.588,10.529,77.655C98.753,191.894,69.033,130.761,62.049,104.171z"/>
+                    <path class="flame" fill="#F60C50" d="M101.011,112.926c0,0,8.973,10.519,4.556,16.543C99.37,129.735,106.752,117.406,101.011,112.926z"/>
+                    <path class="flame one" fill="#F60C50" d="M55.592,126.854c0,0-3.819,13.29,2.699,16.945C64.038,141.48,55.907,132.263,55.592,126.854z"/>
+                    <path class="flame two" fill="#F60C50" d="M54.918,104.595c0,0-3.959,6.109-1.24,8.949C56.93,113.256,52.228,107.329,54.918,104.595z"/>
+                </svg>
+            </div>
+            <div class="mo-fire--two">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="125px" height="189.864px" viewBox="0 0 125 189.864" enable-background="new 0 0 125 189.864" xml:space="preserve">
+                    <path class="flame-main" fill="#BA2C40" d="M76.553,186.09c0,0-10.178-2.976-15.325-8.226s-9.278-16.82-9.278-16.82s-0.241-6.647-4.136-18.465
+                        c0,0,3.357,4.969,5.103,9.938c0,0-5.305-21.086,1.712-30.418c7.017-9.333,0.571-35.654-2.25-37.534c0,0,13.07,5.64,19.875,47.54
+                        c6.806,41.899,16.831,45.301,6.088,53.985"/>
+                    <path class="flame-main one" fill="#F60C50" d="M61.693,122.257c4.117-15.4,12.097-14.487-11.589-60.872c0,0,32.016,10.223,52.601,63.123
+                        c20.585,52.899-19.848,61.045-19.643,61.582c0.206,0.537-19.401-0.269-14.835-18.532S57.576,137.656,61.693,122.257z"/>
+                    <path class="flame-main two" fill="#BB2C40" d="M81.657,79.192c0,0,11.549,24.845,3.626,40.02c-7.924,15.175-21.126,41.899-0.425,64.998
+                        C84.858,184.21,125.705,150.905,81.657,79.192z"/>
+                    <path class="flame-main three" fill="#F60C50" d="M99.92,101.754c0,0-23.208,47.027-12.043,80.072c0,0,32.741-16.073,20.108-45.79
+                        C95.354,106.319,99.92,114.108,99.92,101.754z"/>
+                    <path class="flame-main four" fill="#CA2444" d="M103.143,105.917c0,0,8.927,30.753-1.043,46.868c-9.969,16.115-14.799,29.041-14.799,29.041
+                        S134.387,164.603,103.143,105.917z"/>
+                    <path class="flame-main five" fill="#F60C50" d="M62.049,104.171c0,0-15.645,67.588,10.529,77.655C98.753,191.894,69.033,130.761,62.049,104.171z"/>
+                    <path class="flame" fill="#F60C50" d="M101.011,112.926c0,0,8.973,10.519,4.556,16.543C99.37,129.735,106.752,117.406,101.011,112.926z"/>
+                    <path class="flame one" fill="#F60C50" d="M55.592,126.854c0,0-3.819,13.29,2.699,16.945C64.038,141.48,55.907,132.263,55.592,126.854z"/>
+                    <path class="flame two" fill="#F60C50" d="M54.918,104.595c0,0-3.959,6.109-1.24,8.949C56.93,113.256,52.228,107.329,54.918,104.595z"/>
+                </svg>
+            </div>
+            <div class="mo-fire--three">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="125px" height="189.864px" viewBox="0 0 125 189.864" enable-background="new 0 0 125 189.864" xml:space="preserve">
+                    <path class="flame-main" fill="#BA2C40" d="M76.553,186.09c0,0-10.178-2.976-15.325-8.226s-9.278-16.82-9.278-16.82s-0.241-6.647-4.136-18.465
+                        c0,0,3.357,4.969,5.103,9.938c0,0-5.305-21.086,1.712-30.418c7.017-9.333,0.571-35.654-2.25-37.534c0,0,13.07,5.64,19.875,47.54
+                        c6.806,41.899,16.831,45.301,6.088,53.985"/>
+                    <path class="flame-main one" fill="#F60C50" d="M61.693,122.257c4.117-15.4,12.097-14.487-11.589-60.872c0,0,32.016,10.223,52.601,63.123
+                        c20.585,52.899-19.848,61.045-19.643,61.582c0.206,0.537-19.401-0.269-14.835-18.532S57.576,137.656,61.693,122.257z"/>
+                    <path class="flame-main two" fill="#BB2C40" d="M81.657,79.192c0,0,11.549,24.845,3.626,40.02c-7.924,15.175-21.126,41.899-0.425,64.998
+                        C84.858,184.21,125.705,150.905,81.657,79.192z"/>
+                    <path class="flame-main three" fill="#F60C50" d="M99.92,101.754c0,0-23.208,47.027-12.043,80.072c0,0,32.741-16.073,20.108-45.79
+                        C95.354,106.319,99.92,114.108,99.92,101.754z"/>
+                    <path class="flame-main four" fill="#CA2444" d="M103.143,105.917c0,0,8.927,30.753-1.043,46.868c-9.969,16.115-14.799,29.041-14.799,29.041
+                        S134.387,164.603,103.143,105.917z"/>
+                    <path class="flame-main five" fill="#F60C50" d="M62.049,104.171c0,0-15.645,67.588,10.529,77.655C98.753,191.894,69.033,130.761,62.049,104.171z"/>
+                    <path class="flame" fill="#F60C50" d="M101.011,112.926c0,0,8.973,10.519,4.556,16.543C99.37,129.735,106.752,117.406,101.011,112.926z"/>
+                    <path class="flame one" fill="#F60C50" d="M55.592,126.854c0,0-3.819,13.29,2.699,16.945C64.038,141.48,55.907,132.263,55.592,126.854z"/>
+                    <path class="flame two" fill="#F60C50" d="M54.918,104.595c0,0-3.959,6.109-1.24,8.949C56.93,113.256,52.228,107.329,54.918,104.595z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Отправка данных -->
+    <div class="overlay_form hidden">
+        <div class="overlay_form-fire">
+            <img src="./src/images/smoke_2.png" alt="">
+        </div>
+        <div class="overlay_form-kebab"> 
+            <img src="/src/images/kebab.png" alt=""> 
+        </div>
+        <div class="overlay_form-title">
+            Мда, а у тебя получился <br> аппетитный шашлычок <br>
+            <span class="title-light">Оставь контакты и получи<br>свой приз</span>
+        </div>
+        <form action="" method="post">
+            <label for="name">Имя</label>
+            <input
+                pattern="[а-яА-Яa-zA-Z\s]+"
+                title="Имя с фамилией по желанию"
+                required
+                id="name"
+                name="Имя"
+                type="text">
+            <label for="phone">Телефон</label>
+            <input
+                title="Номер телефона в формате +7 (999) 999-9999"
+                required
+                id="phone"
+                name="Телефон"
+                type="text">
+            <label for="email">Email</label>
+            <input
+                pattern="[^@.\s]+@[^@.\s]+\.\w+"
+                title="Адрес электронной почты. Пример: ex@mple.com"
+                required
+                id="email"
+                name="Email"
+                type="text">
+            <button class="form_btn">
+                Отправить
+            </button>
+        </form>
+    </div>
+    <div class="button-switch"> 
+        <img class="zvuk_text" src="../src/images/zvuk.svg" alt=""> 
+        <input type="checkbox" id="switch-orange" class="switch audio_btn" /> 
+        <label for="switch-orange" class="lbl-off">
+            <svg width="25" height="25" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                <path d="M5.21724 1.89844C5.16567 1.92656 4.45083 2.50781 3.63052 3.18985L2.1352 4.42735L1.25864 4.43438L0.382079 4.44141L0.267235 4.51172C0.196923 4.55625 0.12661 4.62656 0.0820788 4.69688L0.0117662 4.81172L0.00473498 6.0211C4.74818e-05 7.09453 0.00239123 7.24219 0.0375475 7.33125C0.0914538 7.47422 0.178173 7.56797 0.316454 7.63125C0.433641 7.6875 0.440673 7.6875 1.27974 7.6875H2.12583L3.61177 8.92032C4.42974 9.59766 5.14458 10.1789 5.20317 10.2141C5.47505 10.3758 5.85708 10.2281 5.96724 9.91641C6.01177 9.79219 6.01177 2.325 5.96724 2.19844C5.92974 2.09063 5.84771 1.99219 5.74224 1.92188C5.62036 1.83985 5.3438 1.82813 5.21724 1.89844Z" fill="#2E2E2E"/> 
+                <rect x="6" y="4.70711" width="1" height="5" rx="0.5" transform="rotate(-45 6 4.70711)" fill="#2E2E2E"/> 
+                <rect x="9.53552" y="4" width="1" height="5" rx="0.5" transform="rotate(45 9.53552 4)" fill="#2E2E2E"/> 
+            </svg> 
+        </label> 
+        <label for="switch-orange" class="lbl-on"> 
+            <svg width="25" height="25" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                <path d="M9.61641 1.27734C9.51094 1.32187 9.33281 1.49297 9.27422 1.60547C9.23906 1.67109 9.225 1.74375 9.22266 1.85156C9.22266 2.03437 9.24609 2.08125 9.51094 2.40703C10.1648 3.21328 10.5797 4.1625 10.7508 5.23125C10.807 5.59219 10.807 6.48281 10.7508 6.86016C10.5961 7.88906 10.2305 8.75625 9.60234 9.59062C9.36562 9.90937 9.32812 9.98437 9.32812 10.1531C9.32812 10.3102 9.38906 10.4437 9.51562 10.5703C9.64453 10.6992 9.77578 10.7578 9.9375 10.7578C10.1789 10.7578 10.2867 10.6758 10.6102 10.2422C11.0836 9.61172 11.4633 8.85703 11.7023 8.0625C12.3937 5.78672 11.857 3.3 10.282 1.47187C10.1461 1.31484 9.99844 1.24219 9.81562 1.24219C9.74766 1.24453 9.65859 1.25859 9.61641 1.27734Z" fill="#2E2E2E"/> 
+                <path d="M5.21724 1.89844C5.16567 1.92656 4.45083 2.50781 3.63052 3.18984L2.1352 4.42734L1.25864 4.43437L0.382079 4.4414L0.267235 4.51172C0.196923 4.55625 0.12661 4.62656 0.0820788 4.69687L0.0117662 4.81172L0.00473498 6.02109C4.74818e-05 7.09453 0.00239123 7.24219 0.0375475 7.33125C0.0914538 7.47422 0.178173 7.56797 0.316454 7.63125C0.433641 7.6875 0.440673 7.6875 1.27974 7.6875H2.12583L3.61177 8.92031C4.42974 9.59766 5.14458 10.1789 5.20317 10.2141C5.47505 10.3758 5.85708 10.2281 5.96724 9.91641C6.01177 9.79219 6.01177 2.325 5.96724 2.19844C5.92974 2.09062 5.84771 1.99219 5.74224 1.92187C5.62036 1.83984 5.3438 1.82812 5.21724 1.89844Z" fill="#2E2E2E"/> 
+                <path d="M7.87039 3.11953C7.65242 3.15234 7.43445 3.34922 7.36883 3.57656C7.31258 3.77344 7.34539 3.88828 7.53992 4.16719C7.62664 4.29141 7.7368 4.46484 7.78836 4.55625C8.3368 5.55 8.28055 6.86016 7.65008 7.79531C7.47898 8.05078 7.4532 8.11406 7.4532 8.27344C7.4532 8.44219 7.50476 8.55938 7.64305 8.69766C7.83055 8.88516 8.09305 8.93672 8.2993 8.82891C8.5407 8.70234 8.93445 8.04609 9.13836 7.43438C9.2743 7.02656 9.33055 6.69141 9.34461 6.20625C9.36336 5.60391 9.30945 5.21016 9.1407 4.6875C8.95555 4.11563 8.46102 3.29531 8.22664 3.17578C8.12352 3.12187 7.98992 3.10078 7.87039 3.11953Z" fill="#2E2E2E"/> 
+            </svg> 
+        </label> 
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="./src/dist/js/jquery.maskedinput.min.js"></script>
+    <script src="./src/dist/js/app.js"></script>
+    <script type="text/javascript">
+        // $(document).on("ready",function(){
+            $("#phone").mask("+7 (999) 999-9999", { placeholder: "+7 (___) ___-____" })
+        // })
+    </script>
+</body>
+</html>
